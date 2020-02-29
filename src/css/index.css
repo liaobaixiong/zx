@@ -1,0 +1,143 @@
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0
+}
+
+a {
+    color: #172c45;
+    text-decoration: none
+}
+
+a:hover {
+    color: #cd0200;
+    text-decoration: underline
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: 0;
+    vertical-align: middle
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+.fs12 {
+    font-size: 12px;
+}
+
+.fs14 {
+    font-size: 14px;
+}
+
+.fs16 {
+    font-size: 16px;
+}
+
+.fs18 {
+    font-size: 18px;
+}
+
+.fs20 {
+    font-size: 20px;
+}
+
+.main {
+    width: 1230px;
+    margin: 0px auto;
+}
+
+.top {
+    background-color: #F8F8F8;
+    height: 40px;
+}
+
+.bt {
+    height: 40px;
+    /* background-color: blue; */
+}
+
+.bt>.btz {
+    width: 422px;
+    line-height: 40px;
+}
+.btz .nav-link{
+    padding-right: 40px;
+}
+.bt>.bty {
+    width: 188px;
+    line-height: 40px;
+}
+.bty .nav-link{
+    padding-right: 20px;
+}
+.bty .nav-link span{
+    color: #1292D5;
+}
+.bty .nav-link:hover{
+    color: #337ab7;
+}
+.btz .nav-link:hover{
+    color: #337ab7;
+}
+.top2 {
+    height: 85px;
+    padding-top: 25px;
+    /* background-color: darkkhaki; */
+}
+.bti{
+    width: 250px;
+    height: 35px;
+}
+.bt2z{
+    width: 660px;
+    height: 35px;
+    line-height: 35px;
+}
+.bt2z .nav-link{
+    padding: 0px 30px;
+}
+.bt2z .nav-link:hover{
+    color: #337ab7;
+}
+.bt2y{
+    width: 256px;
+    height: 35px;
+    /* background-color: darkturquoise; */
+    padding: 0px;
+}
+.lb{
+    width: 100%;background-color: dimgray;
+    height: 480px;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
