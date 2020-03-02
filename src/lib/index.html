@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- 引入的目录结构按照 dist 文件夹下的目录结构引入 -->
+  <link rel="stylesheet" href="../sass/xiaomi.css">
+  <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
+</head>
+<body>
+
+  <div class="header">
+    <div class="container">
+      <ul>
+        <li>
+          1
+        </li>
+        <span>|</span>
+        <li>2</li>
+        <span>|</span>
+        <li>3</li>
+        <span>|</span>
+
+
+        <li>4</li>
+        <span>|</span>
+        <li>5</li>
+        <span>|</span>
+        <li>6</li>
+        <span>|</span>
+        <li>7</li>
+        <span>|</span>
+        <li>8</li>
+        <span>|</span>
+        <li>9</li>
+        <span>|</span>
+        <li>10</li>
+      </ul>
+
+      <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="nav_top container">
+    <ul>
+    </ul>
+  </div>
+
+  <div class="nav_box">
+    <ul class="container">
+    </ul>
+  </div>
+
+  <div class="banner container">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/56e491c83bde043ca4e8ff2d8255dfef.jpg?thumb=1&w=1226&h=460&f=webp&q=90" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dcb09c80c58dc9d71623c925739a3733.jpg?thumb=1&w=1226&h=460&f=webp&q=90" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6bd4174b8c5aad67a64864a5716ad152.jpg?thumb=1&w=1226&h=460&f=webp&q=90" alt="">
+        </div>
+      </div>
+      <!-- 如果需要分页器, 下面的小圆点 -->
+      <div class="swiper-pagination"></div>
+
+      <!-- 如果需要导航按钮, 所有切换 -->
+      <div class="swiper-button-prev prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- 如果需要滚动条 -->
+      <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+    <div class="nav_list">
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <script src="../lib/swiper/js/swiper.min.js"></script>
+  <script src="../lib/jquery/dist/jquery.min.js"></script>
+  <script>
+    /*
+      带有事件的二级菜单渲染
+
+      1. 准备一个数据
+        => 我这里准备的还是一个 json 格式的文件
+      2. 书写布局
+        => 用一堆乱七八糟的文本代替就可以了
+      3. 请求自己准备好的数据
+        => ajax 请求一个本地 json 文件
+      4. 渲染和事件的操作
+        4-1. 选渲染一级菜单
+          => 根据一级菜单鼠标事件, 出现的二级菜单
+      5. 移入每一个 nav_top 里面的 li 的时候
+        => nav_box 里面的内容不一样
+        => 移入第一个 li 的时候
+          -> 应该用数组里面的第一个 li 里面的 list 来渲染 nav_box
+        => 移入第二个 li 的时候
+          -> 应该用数组里面的第二个 li 里面的 list 来渲染 nav_box
+    */
+
+    var mySwiper = new Swiper ('.swiper-container', {
+        // direction: 'vertical', // 垂直切换选项
+        loop: true, // 循环模式选项
+        autoplay: {
+          delay: 1000
+        },
+        effect: 'cube',
+
+        // 如果需要分页器
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // 如果需要前进后退按钮
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // 如果需要滚动条
+        // scrollbar: {
+        //   el: '.swiper-scrollbar',
+        // },
+      })
+
+    getList()
+
+    function getList() {
+      $.ajax({
+        url: '../lib/nav_top.json',
+        dataType: 'json',
+        success: function (res) {
+          console.log(res)
+
+          // 4-1. 准备一个空字符串
+          let str = ''
+
+          // 4-2. 渲染一级的 li
+          res.forEach(item => {
+            str += `<li>${ item.name }</li>`
+          })
+
+          // 4-3. 填充到 nav_top 里面的 ul 里面
+          $('.nav_top > ul')
+            .html(str)
+            .on({
+              mouseenter: () => $('.nav_box').stop().slideDown(),
+              mouseleave: () => $('.nav_box').stop().slideUp()
+            })
+            .children('li') // 找到所有的一级菜单下的 li
+            .on('mouseover', function () {
+              // 5-1. 知道自己移入的时哪一个 li
+              const index = $(this).index()
+              // 5-2. 找到要渲染的数组
+              const list = res[index].list
+              // 5-3. 用我们找到的数组把 nav_box 位置渲染了就可以了
+              let str = ''
+
+              // 5-4. 进行组装
+              list.forEach(item => {
+                str += `
+                  <li>
+                    <div>
+                      <img src="${ item.list_url }" alt="">
+                    </div>
+                    <p class="title">${ item.list_name }</p>
+                    <span class="price">${ item.list_price }</span>
+                  </li>
+                `
+              })
+
+              // 5-5. 填充到页面里面
+              $('.nav_box > ul').html(str)
+            })
+
+          // 4-4. 给 nav_box 添加一个移入移出事件
+          $('.nav_box')
+            .on({
+              mouseover: function () { $(this).finish().show() },
+              mouseout: function () { $(this).finish().slideUp() }
+            })
+        }
+      })
+    }
+  </script>
+</body>
+</html>

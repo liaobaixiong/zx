@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "name": "首页"
+    },
+    {
+        "id": 2,
+        "name": "Axon系列",
+        "list": [
+            {
+                "list-id": 201,
+                "list_name": "【5G手机】ZTE A2020N2 Pro 中兴天机Axon 10 Pro 5G版",
+                "list_price": 4999,
+                "list_src": ""
+            },
+            {
+                "list-id": 202,
+                "list_name": "ZTE中兴 天机Axon 10 Pro ",
+                "list_price": 3199,
+                "list_src": ""
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Blade系列",
+        "list": [
+            {
+                "list-id": 301,
+                "list_name": "ZTE中兴 Blade 20smart 孝心版",
+                "list_price": 899,
+                "list_src": ""
+            },
+            {
+                "list-id": 302,
+                "list_name": "ZTE中兴 Blade A7s",
+                "list_price": 699,
+                "list_src": ""
+            },
+            {
+                "list-id": 303,
+                "list_name": "ZTE中兴 Blade V10  夜空黑",
+                "list_price": 799,
+                "list_src": ""
+            },
+            {
+                "list-id": 304,
+                "list_name": "ZTE中兴 Blade A7 星辰黑",
+                "list_price": 599,
+                "list_src": ""
+            },
+            {
+                "list-id": 304,
+                "list_name": "ZTE中兴 Blade A7 海魅蓝",
+                "list_price": 499,
+                "list_src": ""
+            }
+        ]
+    }
+]

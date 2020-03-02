@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- 引入的目录结构按照 dist 文件夹下的目录结构引入 -->
+  <!-- <link rel="stylesheet" href="../sass/index.css"> -->
+</head>
+<body>
+  <h1>首页</h1>
+
+  <div>123</div>
+
+  <script src="../lib/jquery/dist/jquery.min.js"></script>
+  <script>
+
+    /*
+      jsonp 请求数据的地址
+      ？ 分隔两个部分
+      前面一部分是请求地址
+      后面一部分是参数
+      https://api.search.mi.com/search?   地址： 直接卸载 url 的位置
+      callback=jsonpcallback              回调函数： jQuery 会自动帮我们准备一个回调函数
+      &query=%E6%99%BA%E8%83%BD%E5%AE%B6%E5%BA%AD
+      &page_index=1
+      &page_size=20
+      &filter_tag=0
+      &main_sort=0
+      &province_id=2
+      &city_id=36
+      &_=1583112932446     防止缓存的， 我们就不需要写了， 因为 jQuery 会自动添加
+      https://account.xiaomi.com/pass/serviceLogin?
+      callback=https%3A%2F%2Faccount.xiaomi.com%2Fsts%3Fsign%3DAlu7ygqMqyP8yHqeSXZC7WAuM20%253D%26followup%3Dhttps%253A%252F%252Faccount.xiaomi.com%252Fpass%252FuserInfoJsonP%253FuserId%253D0%2526callback%253DsetLoginInfo_getAccountInfo%26sid%3Dpassport
+      &sid=passport
+    */
+
+    // $.ajax({
+    //   url: 'https://account.xiaomi.com/pass/serviceLogin',
+    //   data: {
+    //     query: '智能家庭',
+    //     page_index: 1,
+    //     page_size: 20,
+    //     filter_tag: 0,
+    //     main_sort: 2,
+    //     sort_by: 'asc',
+    //     province_id: 2,
+    //     city_id: 36
+    //   },
+    //   dataType: 'jsonp',
+    //   success: function (res) {
+    //     console.log(res)
+    //   }
+    // })
+      
+  </script>
+</body>
+</html>
