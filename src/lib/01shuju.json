@@ -1,7 +1,8 @@
 [
     {
         "id": 1,
-        "name": "首页"
+        "name": "首页",
+        "list": []
     },
     {
         "id": 2,
@@ -10,14 +11,14 @@
             {
                 "list-id": 201,
                 "list_name": "【5G手机】ZTE A2020N2 Pro 中兴天机Axon 10 Pro 5G版",
-                "list_price": 4999,
-                "list_src": ""
+                "list_price": "￥4999",
+                "list_src": "../images/058.jpg"
             },
             {
                 "list-id": 202,
                 "list_name": "ZTE中兴 天机Axon 10 Pro ",
-                "list_price": 3199,
-                "list_src": ""
+                "list_price": "￥3199",
+                "list_src": "../images/055.jpg"
             }
         ]
     },
@@ -28,33 +29,48 @@
             {
                 "list-id": 301,
                 "list_name": "ZTE中兴 Blade 20smart 孝心版",
-                "list_price": 899,
-                "list_src": ""
+                "list_price": "￥899",
+                "list_src": "../images/035.jpg"
             },
             {
                 "list-id": 302,
                 "list_name": "ZTE中兴 Blade A7s",
-                "list_price": 699,
-                "list_src": ""
+                "list_price": "￥699",
+                "list_src": "../images/067.jpg"
             },
             {
                 "list-id": 303,
                 "list_name": "ZTE中兴 Blade V10  夜空黑",
-                "list_price": 799,
-                "list_src": ""
+                "list_price": "￥799",
+                "list_src": "../images/073.jpg"
             },
             {
                 "list-id": 304,
                 "list_name": "ZTE中兴 Blade A7 星辰黑",
-                "list_price": 599,
-                "list_src": ""
+                "list_price": "￥599",
+                "list_src": "../images/052.jpg"
             },
             {
                 "list-id": 304,
                 "list_name": "ZTE中兴 Blade A7 海魅蓝",
-                "list_price": 499,
-                "list_src": ""
+                "list_price": "￥499",
+                "list_src": "../images/011.jpg"
             }
         ]
+    },
+    {
+        "id": 5,
+        "name": "Nubla",
+        "list": []
+    },
+    {
+        "id": 5,
+        "name": "服务",
+        "list": []
+    },
+    {
+        "id": 6,
+        "name": "中兴社区",
+        "list": []
     }
 ]
