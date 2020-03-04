@@ -87,3 +87,55 @@ function getList2() {
     }
   })
 }
+
+getList3()
+function getList3() {
+  $.ajax({
+    url: "../lib/03shuju.json",
+    dataType: 'json',
+    success: function (res) {
+      console.log(res)
+      let str = "";
+      res.forEach(item => {
+        str += `<li><a href="#">
+                <img src="${item.src}" alt="">
+                <h6>${item.name}</h6>
+                <p class="b3x_p1">${item.text}</p>
+                <p class="b3x_p2">${item.perice}<span>${item.per_1}</span></p></a>
+              </li>`
+      });
+      $('.bds_3x>ul').html(str)
+    }
+  })
+}
+
+getList4()
+function getList4() {
+  $.ajax({
+    url: "../lib/04shuju.json",
+    dataType: 'json',
+    success: function (res) {
+      console.log(res)
+      let str = "";
+      res.forEach(item => {
+        str += `<li>${item.name}</li>`
+      });
+      $('.d4y>ul').html(str).on({
+        mouseenter: () => $('.d4d').stop().slideDown()
+      }).children('li').on('mouseover', function () {
+          const index = $(this).index()
+          const list = res[index].list
+          // console.log(list)
+          let str = ''
+          list.forEach(item => {
+            str += `<li><a href="#">
+            <img src="${item.src}" alt="">
+            <h6>${item.list_name}</h6>
+            <p class="b3x_p2">${item.perice}</p></a>
+          </li>`
+          })
+          $('.d4d>ul').html(str)
+        })
+    }
+  })
+}
