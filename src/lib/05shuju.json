@@ -1,0 +1,110 @@
+[
+    {
+        "id":1,
+        "name":"ZTE中兴 Blade 20smart 孝心版",
+        "name_":"【直降100，到手价899】中兴年度亲情手机新品首发 5000毫安大电池，AI三摄，6.49英寸大屏，远程关爱，4GB+128GB大内存",
+        "per":"￥899",
+        "per_1":"￥999",
+        "src":"../images/xq/00.jpg",
+        "src_1":"../images/xq/01.jpg"
+    },
+    {
+        "id":2,
+        "name":"ZTE中兴 Blade A7s",
+        "name_":"【直降100，到手价699元】6.088英寸水滴屏，4000mAh大电池，高清广角三摄，4GB+64GB大内存",
+        "per":"￥699",
+        "per_1":"￥799",
+        "src":"../images/xq/10.jpg",
+        "src_1":"../images/xq/11.jpg"
+    },
+    {
+        "id":3,
+        "name":"ZTE A2020N2 Pro 中兴天机Axon 10 Pro 5G版",
+        "name_":"【6期免息分期】5G先锋，唯快不破， Axon 10 Pro 八曲面水滴全面屏，4800万超广角AI三摄，20倍混合变焦，高通骁龙855",
+        "per":"￥5799",
+        "per_1":" ",
+        "src":"../images/xq/20.jpg",
+        "src_1":"../images/xq/21.jpg"
+    },
+    {
+        "id":4,
+        "name":"ZTE A2020 Pro 中兴天机Axon 10 Pro",
+        "name_":"【直降100，到手价899】中兴年度亲情手机新品首发 5000毫安大电池，AI三摄，6.49英寸大屏，远程关爱，4GB+128GB大内存",
+        "per":"￥3199",
+        "per_1":"￥3699",
+        "src":"../images/xq/30.jpg",
+        "src_1":"../images/xq/31.jpg"
+    },
+    {
+        "id":5,
+        "name":"ZTE A2020 Pro 中兴天机Axon 10 Pro蓝色",
+        "name_":"【享6期免息分期，赠送耳机+智能保护套】5G先锋，唯快不破， Axon 10 Pro 八曲面水滴全面屏，4800万超广角AI三摄，20倍混合变焦，高通骁龙855 ",
+        "per":"￥2699",
+        "per_1":"￥3199",
+        "src":"../images/xq/30.jpg",
+        "src_1":"../images/xq/31.jpg"
+    },
+    {
+        "id":6,
+        "name":"ZTE A2020 Pro 中兴天机Axon 10 Pro蓝色",
+        "name_":"【享6期免息分期，赠送耳机+智能保护套】5G先锋，唯快不破， Axon 10 Pro 八曲面水滴全面屏，4800万超广角AI三摄，20倍混合变焦，高通骁龙855 ",
+        "per":"￥3699",
+        "per_1":"￥4199",
+        "src":"../images/xq/30.jpg",
+        "src_1":"../images/xq/31.jpg"
+    },
+    {
+        "id":7,
+        "name":"ZTE中兴 Blade V10  ",
+        "name_":"【享3期免息花呗分期】准旗舰CPU 3200万AI自拍 高清水滴屏 超强续航",
+        "per":"￥799",
+        "per_1":"￥1199",
+        "src":"../images/xq/60.jpg",
+        "src_1":"../images/xq/61.jpg"
+    },
+    {
+        "id":8,
+        "name":"ZTE中兴 Blade A7 ",
+        "name_":"6.088英寸水滴全面屏，1600万AI高清拍照，人脸识别，八核处理器，颜值很出众，性能更强悍！",
+        "per":"￥499",
+        "per_1":"￥599",
+        "src":"../images/xq/70.jpg",
+        "src_1":"../images/xq/71.jpg"
+    },
+    {
+        "id":9,
+        "name":"ZTE中兴 天机Axon 9 Pro ",
+        "name_":"【赠送耳机】看得见的改变，动静自如，真彩视界！骁龙845、8G+256G AI智能快拍 无线快充 IP68防尘防水 ",
+        "per":"￥3999",
+        "per_1":" ",
+        "src":"../images/xq/80.jpg",
+        "src_1":"../images/xq/81.jpg"
+    },
+    {
+        "id":10,
+        "name":"ZTE中兴 V870",
+        "name_":" -",
+        "per":"￥3799",
+        "per_1":" ",
+        "src":"../images/xq/90.jpg",
+        "src_1":"../images/xq/91.jpg"
+    },
+    {
+        "id":11,
+        "name":"ZTE中兴 小鲜5 4G全网通",
+        "name_":"中兴小鲜5,鲜享每刻! 高通骁龙MSM8917，1300万+200万后置双彩摄像头，5.0英寸2.5D弧面屏，圆润机身，时尚配色",
+        "per":"￥999",
+        "per_1":" ",
+        "src":"../images/xq/100.jpg",
+        "src_1":"../images/xq/101.jpg"
+    },
+    {
+        "id":12,
+        "name":"ZTE中兴 V870 行业版",
+        "name_":" -",
+        "per":"￥2799",
+        "per_1":" ",
+        "src":"../images/xq/90.jpg",
+        "src_1":"../images/xq/91.jpg"
+    }
+]

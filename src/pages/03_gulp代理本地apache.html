@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- 引入的目录结构按照 dist 文件夹下的目录结构引入 -->
+  <link rel="stylesheet" href="../sass/index.css">
+</head>
+<body>
+  <h1>首页</h1>
+
+  <div>123</div>
+  <script src="../lib/jquery/dist/jquery.min.js"></script>
+  <script>
+    // 3. 需要做登录注册
+    /*
+      登录
+        + 我需要操作我的数据库
+        + 但是 gulp 启动的是 node 的服务器
+          => 我们不会操作数据库
+        + 但是用 apache 跑 php 文件我会操作数据库
+        + 我们就还是正常启动 gulp 支持页面
+        + 再单独跑一个服务器 apache
+          => 用 gulp 配置一个代理, 代理到 apache 服务器上的 php 文件就可以了
+        + 目录结构不需要调整
+
+      1. 先去准备号 WWW 目录里面的 php 文件
+      2. 最好去 postman 里面测试一下
+      3. 我们再 gulp 里面配置一个代理拿到 apache 服务器上的数据
+        => 因为直接请求地址会报错
+        => 为什么跨域
+          -> 你打开页面时再 http://lcoalhost:8080
+          -> 你的 php 再    http://localhost:80
+        => 跨域: 传输协议, 域名, 端口号 有任意一个不一样就是跨域请求
+      4. 重启 gulp 服务器
+        => 因为你修改了 gulpfile 文件, 就是修改了 配置文件
+        => 配置文件只要修改了, 就需要重启
+      5. 你在请求的时候, 只要请求代理标识符
+        => gulp 启动的 node 服务器会帮你转发请求
+
+      + 这个 php 文件平时不需要上传
+        + 只需要再你的项目完成了
+        + 最后一次的时候把 php 文件复制到你的项目里面, 新建一个文件夹保存一下
+        + 上传就可以了
+        + 写一个说明文档说明一下
+
+      nginx 代理
+        + 当你的 页面跑在 nginx 服务器上的时候
+        + 用 nginx 代理
+      gulp 代理
+        + 当你的 页面跑在 gulp 服务器上的时候
+        + 使用 gulp 配置代理就可以了
+
+      端口号
+        + 可以把 gulp 和 apache 改成一个端口号  ->  这个方式行不通
+        + 如果你改成一个端口号
+          => 两个服务器就冲突了
+          => 谁后启动, 谁就启动不起来了, 报错告诉你端口号被占用
+    */
+
+    
+  </script>
+</body>
+</html>

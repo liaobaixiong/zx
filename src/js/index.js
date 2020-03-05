@@ -3,11 +3,10 @@ var mySwiper = new Swiper('.swiper-container', {
   autoplay: {
     play: 1000
   },
-  // 如果需要分页器
   pagination: {
     el: '.swiper-pagination',
   },
-  // 如果需要前进后退按钮
+  // 前进后退按钮
   navigation: {
     nextEl: '.swiper-button-next',
     // prevEl: '.swiper-button-prev',
@@ -58,10 +57,10 @@ function getList2() {
       console.log(res)
       let str = "";
       res.forEach(item => {
-        str += `<li><p>${item.name}</p>
+        str += `<li><a href="./list.html"><p>${item.name}</p>
         <p class="nav-list-p"><span>${item.name_1}</span>
           <span>${item.name_2}</span><span>${item.name_3}</span>
-          </p></li>`
+          </p></a></li>`
       });
       $('.nav-list>ul').html(str).on({
         mouseenter: () => $('.lb-list').stop().slideDown(),
