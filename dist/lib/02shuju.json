@@ -1,0 +1,180 @@
+[
+    {
+        "id": 1,
+        "name": "手机",
+        "name_1": "天机系列",
+        "name_2": "Blade系列",
+        "name_3": "远航系列",
+        "list": [
+            {
+                "list_id": 101,
+                "list_name": "天机系列",
+                "list_src": "../images/99.jpg"
+            },
+            {
+                "list_id": 102,
+                "list_name": "Blade系列",
+                "list_src": "../images/016.png"
+            },
+            {
+                "list_id": 103,
+                "list_name": "远航系列",
+                "list_src": "../images/019.png"
+            },
+            {
+                "list_id": 104,
+                "list_name": "其他手机",
+                "list_src": "../images/023.jpg"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "智能终端",
+        "name_1": "便携投影",
+        "name_2": "智能穿戴",
+        "name_3": "网络盒子",
+        "list": [
+            {
+                "list_id": 201,
+                "list_name": "便携投影",
+                "list_src": "../images/050.jpg"
+            },
+            {
+                "list_id": 202,
+                "list_name": "智能穿戴",
+                "list_src": "../images/048.jpg"
+            },
+            {
+                "list_id": 303,
+                "list_name": "网络盒子",
+                "list_src": "../images/082.jpg"
+            },
+            {
+                "list_id": 404,
+                "list_name": "智能家居",
+                "list_src": "../images/031.jpg"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "耳机 / 音箱",
+        "name_1": "蓝牙耳机",
+        "name_2": "蓝牙音箱",
+        "name_3": "有线耳机",
+        "list": [
+            {
+                "list_id": 301,
+                "list_name": "蓝牙耳机",
+                "list_src": "../images/020.jpg"
+            },
+            {
+                "list_id": 302,
+                "list_name": "蓝牙音箱",
+                "list_src": "../images/002.jpg"
+            },
+            {
+                "list_id": 303,
+                "list_name": "有线耳机",
+                "list_src": "../images/028.jpg"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "数据线 / 电源适配器",
+        "name_1": "充电器",
+        "name_2": "数据线",
+        "name_3": "车载充电",
+        "list": [
+            {
+                "list_id": 401,
+                "list_name": "充电器",
+                "list_src": "../images/053.jpg"
+            },
+            {
+                "list_id": 402,
+                "list_name": "数据线",
+                "list_src": "../images/056.jpg"
+            },
+            {
+                "list_id": 403,
+                "list_name": "车载充电",
+                "list_src": "../images/059.jpg"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "保护套 / 后盖 / 贴膜",
+        "name_1": "皮套",
+        "name_2": "贴膜",
+        "name_3": "保护袋",
+        "list": [
+            {
+                "list_id": 501,
+                "list_name": "皮套",
+                "list_src": "../images/017.jpg"
+            },
+            {
+                "list_id": 502,
+                "list_name": "贴膜",
+                "list_src": "../images/081.jpg"
+            },
+            {
+                "list_id": 503,
+                "list_name": "保护袋",
+                "list_src": "../images/038.jpg"
+            },
+            {
+                "list_id": 504,
+                "list_name": "Axon M专用配件",
+                "list_src": "../images/010.jpg"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "移动电源/存储卡",
+        "name_1": "存储卡",
+        "name_2": "读卡器",
+        "name_3": "移动电源",
+        "list": [
+            {
+                "list_id": 601,
+                "list_name": "存储卡",
+                "list_src": "../images/080.jpg"
+            },
+            {
+                "list_id": 602,
+                "list_name": "读卡器",
+                "list_src": "../images/026.jpg"
+            },
+            {
+                "list_id": 603,
+                "list_name": "移动电源",
+                "list_src": "../images/061.jpg"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "服务及周边",
+        "name_1": "车载支架",
+        "name_2": "自拍杆",
+        "name_3": "自拍杆",
+        "list": [
+            {
+                "list_id": 701,
+                "list_name": "车载支架",
+                "list_src": "../images/014.jpg"
+            },
+            {
+                "list_id": 702,
+                "list_name": "自拍杆",
+                "list_src": "../images/075.jpg"
+            }
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "name": "ZTE 中兴路由器 5G CPE",
+        "src":"../images/042.jpg",
+        "text":"高通骁龙X50平台、5G高速网络",
+        "perice":"￥2999",
+        "per_1":"￥3599"
+    },
+    {
+        "id": 2,
+        "name": "【两只装】Mesh路由器MF18A ",
+        "src":"../images/009.png",
+        "text":"分布式路由器 子母路由器 千兆家用WiFi",
+        "perice":"￥699",
+        "per_1":"￥799"
+    },
+    {
+        "id": 3,
+        "name": "ZTE中兴 4G全网通随身wifi MF920U5 ",
+        "src":"../images/039.jpg",
+        "text":"4G全网通无线wifi",
+        "perice":"￥229",
+        "per_1":""
+    },
+    {
+        "id": 4,
+        "name": "ZTE中兴 4G室内无线路由器",
+        "src":"../images/063.jpg",
+        "text":" ",
+        "perice":"￥399",
+        "per_1":""
+    }
+]

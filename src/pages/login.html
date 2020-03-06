@@ -38,16 +38,17 @@
           <span>员工登陆</span>
         </div>
         <div class="zt-z">
-          <form action="" method="post">
+          <form id="myForm">
             <p><input name="username" type="text" placeholder="手机号/邮箱/用户名" class="nm"></p>
             <p><input name="password" type="password" placeholder="密码" class="pw"></p>
-            <p>
-              <input name="yzm" type="text" placeholder="验证码" class="in1">
-              <span class="sp-yzm"></span>
-              <label id="l1"></label> 
-            </p>
-            <p><button type="submit" id="b1">登录</button></p>
           </form>
+          <p>
+            <input name="yzm" type="text" placeholder="验证码" class="in1">
+            <span class="sp-yzm"></span>
+            <label id="l1"></label>
+          </p>
+          <p><button type="button" id="b1">登录</button></p>
+
         </div>
         <div class="zt-x">
           <span>立即注册</span>
@@ -161,9 +162,28 @@
   <script src="../js/index.js"></script>
   <script src="../js/login.js"></script>
   <script>
-   
-     
-    
+
+    $('#b1').click(function(){
+      console.log(123)
+      
+      $.ajax({
+        url: '/zxlogin',
+        type: 'post',
+        data: {
+          username: $('.nm').value,
+          password: $('.pw').value
+        },
+        dataType: 'json',
+        success: function (res) {
+          console.log(res)
+          console.log("成功")
+        },
+        error:function(){
+          console.log('失败')
+        }
+      })
+    })
+
   </script>
 </body>
 

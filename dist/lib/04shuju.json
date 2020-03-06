@@ -1,0 +1,93 @@
+[
+    {   
+        "id":1,
+        "name":"壳膜套",
+        "list": [
+            {
+                "id": 11,
+                "list_name": "ZTE中兴 天机AXON 10 Pro 无线充电座",
+                "src": "../images/046.jpg",
+                "perice": "￥149"
+            },
+            {
+                "id": 12,
+                "list_name": "ZTE中兴  智能手机 扩展坞",
+                "src": "../images/005.png",
+                "perice": "￥229"
+            },
+            {
+                "id": 13,
+                "list_name": "ZTE中兴 天机Axon 10 Pro 智能保护套",
+                "src": "../images/018.jpg",
+                "perice": "￥149"
+            },
+            {
+                "id": 14,
+                "list_name": "ZTE中兴 Blade A7 TPU保护套套装",
+                "src": "../images/027.jpg",
+                "perice": "￥39"
+            }
+        ]
+    },
+    {   
+        "id":2,
+        "name":"充电宝",
+        "list": [
+            {
+                "id": 21,
+                "list_name": "5000mAh移动电源 P60 ",
+                "src": "../images/029.jpg",
+                "perice": "￥99"
+            },
+            {
+                "id": 22,
+                "list_name": "2550mAh 卡片式移动电源 ",
+                "src": "../images/007.jpg",
+                "perice": "￥229"
+            },
+            
+            {
+                "id": 23,
+                "list_name": "5000mAh移动电源  P42 轻薄金属机身",
+                "src": "../images/061.jpg",
+                "perice": "￥59"
+            },
+            {
+                "id": 24,
+                "list_name": "P52 卡片式移动电源",
+                "src": "../images/024.jpg",
+                "perice": "￥59"
+            }
+        ]
+    },
+    {   
+        "id":3,
+        "name":"耳机",
+        "list": [
+            {
+                "id": 31,
+                "list_name": "小球音箱 S201",
+                "src": "../images/070.jpg",
+                "perice": "￥49"
+            },
+            {
+                "id": 32,
+                "list_name": "竹韵耳机 SOH3506",
+                "src": "../images/003.jpg",
+                "perice": "￥79"
+            },
+            {
+                "id": 33,
+                "list_name": "线控耳机 SOH3516",
+                "src": "../images/013.png",
+                "perice": "￥49"
+            },
+            {
+                "id": 34,
+                "list_name": "线控耳机 SOH3513（美标 CTIA）",
+                "src": "../images/021.jpg",
+                "perice": "￥49"
+            }
+        ]
+    }
+]

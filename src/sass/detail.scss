@@ -1,7 +1,70 @@
-.xq{
-    height: 875px;
-    width: 1230px;
-    background-color: cyan;
-    padding-bottom: 80px;
-    
+.xq {
+  height: 535px;
+  width: 1230px;
+//   background-color: greenyellow;
+  // padding-bottom: 80px;
+  padding: 10px 10px 80px;
+  .xq-img {
+    width: 550px;
+    height: 500px;
+    // background-color: khaki;
+    // margin: 10px;
+    text-align: center;
+    .tp {
+      width: 400px;
+      margin-top: 20px;
+    }
+  }
+  .xq-nr {
+    width: 615px;
+    height: 500px;
+    // background-color: lavender;
+    margin-left: 10px;
+    padding: 10px 15px;
+    .xq1 {
+      font-size: 24px;
+    }
+    .xq2 {
+      font-size: 14px;
+      color: rgb(102, 102, 102);
+    }
+    .xq3 {
+        padding-bottom: 20px;
+        margin-top: 50px;
+      font-size: 24px;
+      span {
+        font-size: 30px;
+        color: rgb(252, 102, 40);
+        margin-left: 10px;
+      }
+      border-bottom: 1px solid rgb(102, 102, 102);
+    }
+    .xq4 {
+      font-size: 14px;
+      span {
+        font-size: 18px;
+        color: rgb(102, 102, 102);
+        margin-left: 10px;
+      }
+      margin-top: 30px;
+      margin-bottom: 50px;
+    }
+    .xq5 {
+      font-size: 16px;
+      
+    .gwc{
+        border: 1px solid rgb(252, 102, 40);
+        padding: 10px 20px;
+        margin-right: 20px;
+        color: rgb(252, 102, 40);
+      }
+      .xzgm {
+        border: 1px solid rgb(252, 102, 40);
+        padding: 10px 20px;
+        margin-right: 20px;
+        background-color: rgb(252, 102, 40);
+        color: white;
+      }
+    }
+  }
 }

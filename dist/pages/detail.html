@@ -1,0 +1,16 @@
+<!DOCTYPE html><html lang=en><head><meta charset=UTF-8><meta name=viewport content="width=device-width,initial-scale=1"><title>商品详情</title><link rel=stylesheet href=../sass/detail.css><link rel=stylesheet href=../css/index.css><link rel=stylesheet href=../lib/bootstrap/dist/css/bootstrap.css><link rel=stylesheet href=../lib/bootstrap/dist/js/bootstrap.min.js></head><body><div class=detail><div class=top><div class="main bt"><nav class="nav pull-left btz"><a class=nav-link href=#>手机版</a> <a class=nav-link href=#>企业采购</a> <a class=nav-link href=#>商城公告</a> <a class=nav-link href=#>意见反馈</a></nav><nav class="nav pull-right bty"><a class=nav-link href=./login.html>登录</a> <a class=nav-link href=#>注册</a></nav></div></div><div class="xq main"><div class="xq-img fl"></div><div class="xq-nr fl"></div></div><div class=foot><div class="footer main"><div class=footer-top><ul><li><img src=../images/008.png alt=""> <span>7天退货保障</span></li><li><img src=../images/012.png alt=""> <span>15天换货承诺</span></li><li><img src=../images/065.png alt=""> <span>150元起全场免运费</span></li><li><img src=../images/068.png alt=""> <span>全国售后服务点</span></li></ul></div><div class=footer-cen><div class="cen1 fl"><ul class=cenu1><li class=cenul>关注我们</li><li>中兴社区</li><li>官方微信</li><li>新浪微博</li></ul><ul class=cenu1><li class=cenul>帮助中心</li><li>支付方式</li><li>购物指南</li><li>配送指南</li></ul><ul class=cenu1><li class=cenul>售后服务</li><li>退换货流程</li><li>售后网点</li><li>退换货政策</li><li>保修政策</li></ul><ul class=cenu1><li class=cenul>关于商城</li><li>联系我们</li><li>商城简介</li><li>礼品团购</li></ul></div><div class="cen2 fl"><p><span class=cen-span><img src=../images/037.png alt="">在线客服</span></p><p>电话热线: 400-880-9999转7</p><p>周一到周日 9:00 - 24:00 (全年无休)</p></div></div><div class=foot-bot><p class=bot-p1><span>中兴社区</span> <span>|</span> <span>中兴通讯</span> <span>|</span> <span>汇天地</span> <span>|</span> <span>中兴云服务</span> <span>|</span> <span>中兴手机</span></p><p class=bot-p2><span>服务协议</span> <span>|</span> <span>隐私政策</span> <span>|</span> <span>©2014 - 2017 深圳市中兴智谷科技有限公司版权所有，并保留所有权利</span></p><p class=bot-p3><span>增值电信业务经营许可证：粤B2-20160352</span> <span>|</span> <span>ICP备案证书号 :粤ICP备16018970号</span> <span>|</span> <span>粤公网安备 44030502001132号</span> <span>|</span> <span><img src=../images/001.gif alt=""></span></p></div></div></div></div><script src=../lib/jquery/dist/jquery.min.js></script><script src=../lib/fdj/js/zoomsl.min.js></script><script src=../lib/swiper/js/swiper.min.js></script><script src=../js/index.js></script><script src=../js/detail.js></script><script>const goodsInfo = JSON.parse(localStorage.getItem('goods_info'))
+    console.log(goodsInfo)
+    if (goodsInfo === null) {
+      alert('商品不存在')
+    }
+    let str=''
+    let img_z=''
+    img_z=`<img src="${goodsInfo.src}" class="tp">`
+    str=`<p class="xq1">${goodsInfo.name}</p>
+        <p class="xq2">${goodsInfo.name_}</p>
+        <p class="xq3">价格：<span>${goodsInfo.per}</span></p>
+        <p class="xq4">购买数量：<span>1</span></p>
+        <p class="xq5"><a href="./cart.html"><span class="gwc">加入购物车</span></a><span class="xzgm">现在购买</span></p>`
+    // console.log(str)
+    $('.xq-nr').html(str)
+    $('.xq-img').html(img_z)</script></body></html>

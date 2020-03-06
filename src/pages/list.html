@@ -56,24 +56,12 @@
             <ul>
             </ul>
         </div>
+        <div class="px main">
+            <button class="jgpx">价格升序/降序</button>
+        </div>
         <div class="splb main">
             <ul>
-                <li>
-                    <img src="../images/xq/00.jpg" alt="">
-                    <p class="lb-p1">ZTE中兴 Blade 20smart 孝心版</p>
-                    <p class="lb-p2">【直降100，到手价899】中兴年度亲情手机新品首发 5000毫安大电池，AI三摄，6.49英寸大屏，远程关爱，4GB+128GB大内存</p>
-                    <p class="lb-p3"><span class="p31">$99</span><span class="p32">$999</span><a
-                            href="./detail.html"><span class="qg fs14">现在抢购</span></a></p>
-                </li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+
             </ul>
         </div>
         <div class="foot">
@@ -175,31 +163,8 @@
     <script src="../js/index.js"></script>
     <script src="../js/list.js"></script>
     <script>
-        getList5()
-        function getList5() {
-            $.ajax({
-                url: "../lib/05shuju.json",
-                dataType: 'json',
-                success: function (res) {
-                    console.log(res)
-                    let str = "";
-                    res.forEach(item => {
-                        str += `<li>
-                        <img src="${item.src_1}">
-                        <p class="lb-p1">${item.name}</p>
-                        <p class="lb-p2">${item.name_}</p>
-                        <p class="lb-p3">
-                        <span class="p31">${item.per}</span>
-                        <span class="p32">${item.per_1}</span>
-                        <a href="./detail.html">
-                            <span class="qg fs14">现在抢购</span>
-                            </a></p>
-                     </li>`
-                    });
-                    $('.splb>ul').html(str)
-                }
-            })
-        }
+       
+        
     </script>
 </body>
 

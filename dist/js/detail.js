@@ -1,0 +1,1 @@
+"use strict";$(function(){$(".tp").imagezoomsl({zoomrange:[1,12],zoomstart:4,innerzoom:!0,magnifierborder:"none"})});
