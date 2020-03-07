@@ -29,17 +29,8 @@
       </div>
     </div>
     <div class="xq main">
-      <div class="xq-img fl">
-        <!-- <img src="../images/xq/00.jpg" data-large="../images/xq/01.jpg" alt="zoom" class="tp"> -->
-      </div>
-      <div class="xq-nr fl">
-        <!-- <p class="xq1">ZTE中兴 Blade 20smart 孝心版</p>
-        <p class="xq2">【直降100，到手价899】中兴年度亲情手机新品首发 5000毫安大电池，AI三摄，6.49英寸大屏，远程关爱，4GB+128GB大内存</p>
-        <p class="xq3">价格：<span>$111</span></p>
-        <p class="xq4">购买数量：<span>1</span></p>
-        <p class="xq5"><a href="./cart.html"><span class="gwc">加入购物车</span></a><span class="xzgm">现在购买</span></p> -->
-        <!-- <p></p> -->
-      </div>
+      <div class="xq-img fl"></div>
+      <div class="xq-nr fl"></div>
     </div>
     <div class="foot">
       <div class="footer main">
@@ -142,22 +133,36 @@
   <script src="../js/index.js"></script>
   <script src="../js/detail.js"></script>
   <script>
-    const goodsInfo = JSON.parse(localStorage.getItem('goods_info'))
-    console.log(goodsInfo)
-    if (goodsInfo === null) {
-      alert('商品不存在')
-    }
-    let str=''
-    let img_z=''
-    img_z=`<img src="${goodsInfo.src}" class="tp">`
-    str=`<p class="xq1">${goodsInfo.name}</p>
-        <p class="xq2">${goodsInfo.name_}</p>
-        <p class="xq3">价格：<span>${goodsInfo.per}</span></p>
-        <p class="xq4">购买数量：<span>1</span></p>
-        <p class="xq5"><a href="./cart.html"><span class="gwc">加入购物车</span></a><span class="xzgm">现在购买</span></p>`
-    // console.log(str)
-    $('.xq-nr').html(str)
-    $('.xq-img').html(img_z)
+    // let currPage = 1
+    // let flag = true
+    $('.gwc').click(() => {
+      const cart1 = JSON.parse(localStorage.getItem('cart1')) || []
+
+      let exits = cart1.some(item => {
+        return item.id === goodsInfo.id
+
+      })
+      console.log(exits)
+      if (exits) {
+        // console.log(11)
+        let shul=null
+        for (let i = 0; i < cart1.length; i++) {
+          if (cart1[i].id === goodsInfo.id) {
+            shul = cart1[i]
+            break;
+          }
+        }
+        shul.number++
+        shul.xiao= shul.per*shul.number
+      } else {
+        goodsInfo.xiao=goodsInfo.per
+        goodsInfo.sel=false
+        cart1.push(goodsInfo)
+      }
+      localStorage.setItem('cart1', JSON.stringify(cart1))
+      console.log(cart1)
+      window.location.href='./cart.html'
+    })
   </script>
 </body>
 

@@ -1,0 +1,96 @@
+.dx{
+    min-height: 500px;
+    background-color: yellowgreen;
+    .xdx{
+        // height: 800px;
+        background-color: orange;
+        .xdx-top{
+            height: 40px;
+            background-color: rgb(239, 239, 239);
+            line-height: 40px;
+            padding: 0px 5px;
+            .s1{
+                margin-left: 10px;
+            }
+            .s2{
+                margin-left: 40px;
+            }
+            .s3{
+                margin-left: 450px;
+            }
+            .s4{
+                margin-left: 100px;
+            }
+            .s5{
+                margin-left: 150px;
+            }
+            .s6{
+                margin-left: 100px;
+            }
+        }
+        .xdx-cen{
+            min-height: 420px;
+            background-color: paleturquoise;
+            .cen-sp{
+                height: 110px;
+                background-color: yellow;
+                line-height: 110px;
+                .selete{
+                    margin: 0px 60px 0px 15px;
+                }
+                .info{
+                    width: 520px;
+                    img{
+                        width: 98px; 
+                        height: 98px;
+                    }
+
+                }
+                .dj{
+                    // margin-left: 310px;
+                }
+                .shu{
+                    line-height: 10px;
+                    // width: 30px;
+                    margin-top: 45px;
+                    margin-left: 75px;
+                    input{
+                        width: 30px;
+                    }
+                }
+                .xj{
+                    margin-left: 120px;
+                }
+                .sq{
+                    margin-left: 110px;
+                    color: blue;
+                }
+            }
+        }
+        .xdx-foot{
+            height: 40px;
+            line-height: 40px;
+            background-color: peru;
+            .f2{
+                margin-left: 50px;
+            }
+            .f3{
+                background-color: rgb(252, 102, 40);
+                // padding: 7px 12px;
+                width: 60px;
+                height: 30px;
+                margin: 0px 30px 0px 700px;
+                color: white;
+                font-size: 12px;
+                text-align: center;
+                line-height: 30px;
+            }
+            .f4{
+                background-color: rgb(252, 102, 40);
+                padding: 7px 12px;
+                color: white;
+                font-size: 12px;
+            }
+        }
+    }
+}

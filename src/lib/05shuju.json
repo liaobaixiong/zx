@@ -6,7 +6,8 @@
         "per":899,
         "per_1":"￥999",
         "src":"../images/xq/00.jpg",
-        "src_1":"../images/xq/01.jpg"
+        "src_1":"../images/xq/01.jpg",
+        "number":1
     },
     {
         "id":2,
@@ -15,7 +16,8 @@
         "per":699,
         "per_1":"￥799",
         "src":"../images/xq/10.jpg",
-        "src_1":"../images/xq/11.jpg"
+        "src_1":"../images/xq/11.jpg",
+        "number":1
     },
     {
         "id":3,
@@ -24,7 +26,8 @@
         "per":5799,
         "per_1":" ",
         "src":"../images/xq/20.jpg",
-        "src_1":"../images/xq/21.jpg"
+        "src_1":"../images/xq/21.jpg",
+        "number":1
     },
     {
         "id":4,
@@ -33,7 +36,8 @@
         "per":3199,
         "per_1":"￥3699",
         "src":"../images/xq/30.jpg",
-        "src_1":"../images/xq/31.jpg"
+        "src_1":"../images/xq/31.jpg",
+        "number":1
     },
     {
         "id":5,
@@ -42,7 +46,8 @@
         "per":2699,
         "per_1":"￥3199",
         "src":"../images/xq/30.jpg",
-        "src_1":"../images/xq/31.jpg"
+        "src_1":"../images/xq/31.jpg",
+        "number":1
     },
     {
         "id":6,
@@ -51,7 +56,8 @@
         "per":3699,
         "per_1":"￥4199",
         "src":"../images/xq/30.jpg",
-        "src_1":"../images/xq/31.jpg"
+        "src_1":"../images/xq/31.jpg",
+        "number":1
     },
     {
         "id":7,
@@ -60,7 +66,8 @@
         "per":799,
         "per_1":"￥1199",
         "src":"../images/xq/60.jpg",
-        "src_1":"../images/xq/61.jpg"
+        "src_1":"../images/xq/61.jpg",
+        "number":1
     },
     {
         "id":8,
@@ -69,7 +76,8 @@
         "per":499,
         "per_1":"￥599",
         "src":"../images/xq/70.jpg",
-        "src_1":"../images/xq/71.jpg"
+        "src_1":"../images/xq/71.jpg",
+        "number":1
     },
     {
         "id":9,
@@ -78,7 +86,8 @@
         "per":3999,
         "per_1":" ",
         "src":"../images/xq/80.jpg",
-        "src_1":"../images/xq/81.jpg"
+        "src_1":"../images/xq/81.jpg",
+        "number":1
     },
     {
         "id":10,
@@ -87,7 +96,8 @@
         "per":3799,
         "per_1":" ",
         "src":"../images/xq/90.jpg",
-        "src_1":"../images/xq/91.jpg"
+        "src_1":"../images/xq/91.jpg",
+        "number":1
     },
     {
         "id":11,
@@ -96,7 +106,8 @@
         "per":999,
         "per_1":" ",
         "src":"../images/xq/100.jpg",
-        "src_1":"../images/xq/101.jpg"
+        "src_1":"../images/xq/101.jpg",
+        "number":1
     },
     {
         "id":12,
@@ -105,6 +116,7 @@
         "per":2799,
         "per_1":" ",
         "src":"../images/xq/90.jpg",
-        "src_1":"../images/xq/91.jpg"
+        "src_1":"../images/xq/91.jpg",
+        "number":1
     }
 ]
